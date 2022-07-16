@@ -49,7 +49,8 @@ body .desenfoque form .campo label{
 }
 
 /*Campo de texto del formulario*/
-body .desenfoque form .campo input[type="text"]{
+body .desenfoque form .campo input[type="text"],
+body .desenfoque form .campo input[type="password"]{
     padding: 1%;
     font-family: sans-serif;
     font-size: calc(0.5rem + 1.5vh);
@@ -59,7 +60,8 @@ body .desenfoque form .campo input[type="text"]{
     outline: none;
 }
 
-body .desenfoque form .campo input[type="text"]:focus{
+body .desenfoque form .campo input[type="text"]:focus,
+body .desenfoque form .campo input[type="password"]:focus{
     border-bottom: 2px solid black;
 }
 
@@ -84,6 +86,17 @@ body .desenfoque form .campo input[type="submit"]:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/*Clase para los errores (label)*/
+.error{
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 1.2vh);
+    color: red;
+}
+
+/*Clase para ocultar elementos*/
+.ocultar{
+    display: none;
 }
 
 /* Moviles */
