@@ -1,4 +1,4 @@
-/*contenedor principal para que abarque toda la pantalla*/
+/*Contenedor principal para que abarque toda la pantalla*/
 .cntModalProducto{
     height: 100%;
     width: 100%;
@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-/*formulario*/
+/*Formulario*/
 .cntModalProducto form{
     width: 35%;
     height: auto;
@@ -21,14 +21,15 @@
 }
 
 
-/*titulo del formulario*/
+/*Titulo del formulario*/
 .cntModalProducto form h3{
     font-family: sans-serif;
     color: black;
     font-size: calc(0.5rem + 1.5vw);
     text-align: center;
 }
-/*contenedor donde va el label e input text (campo)*/
+
+/*Contenedor donde va el label e input text (campo)*/
 .cntModalProducto form .campo{
     width: 100%;
     font-family: sans-serif;
@@ -37,6 +38,7 @@
     margin-top: 2%;
 }
 
+/*Entrada de datos (nombre, descripcion y precio)*/
 .cntModalProducto form .campo input[type="text"]{
     margin-top: 1.5%;
     width: 100%;
@@ -44,21 +46,19 @@
     padding-bottom: 1%;
     padding-left: 1%;
     outline: none;
-    /* border: 0;
-    border-style: none;
-    background: transparent;
-    border-bottom: 1px solid black; */
-    
     font-family: sans-serif;
     font-size: calc(0.5rem + 1.4vh);
 }
+/*Contenedor de los botones*/
 .cntModalProducto form .cntBotones{
     width: 100%;
     text-align: center;
     margin-top: 2%;
 }
 
-.cntModalProducto form .cntBotones input[type="button"]{
+/*Botones de cancelar y aceptar*/
+.cntModalProducto form .cntBotones input[type="button"],
+.cntModalProducto form .cntBotones input[type="submit"]{
     border-radius: 5px;
     padding: 1%;
     border: 1px solid black;
@@ -69,12 +69,21 @@
     
 }
 
-.cntModalProducto form .cntBotones input[type="button"]:hover{
+.cntModalProducto form .cntBotones input[type="button"]:hover,
+.cntModalProducto form .cntBotones input[type="submit"]:hover{
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
 }
 
+/*clase para ocultar elementos*/
 .oculto{
     display: none;
+}
+
+/*Clase para los errores (label)*/
+.error{
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 1.2vh);
+    color: red;
 }
 
 /* MOVILES */
@@ -96,7 +105,8 @@
         .cntModalProducto form .cntBotones{
             margin-top: 3%;
         }
-        .cntModalProducto form .cntBotones input[type="button"]{
+        .cntModalProducto form .cntBotones input[type="button"],
+        .cntModalProducto form .cntBotones input[type="submit"]{
             font-size: calc(0.5rem + 2vw);            
         }
 }
@@ -121,7 +131,8 @@
         .cntModalProducto form .cntBotones{
             margin-top: 3%;
         }
-        .cntModalProducto form .cntBotones input[type="button"]{
+        .cntModalProducto form .cntBotones input[type="button"],
+        .cntModalProducto form .cntBotones input[type="submit"]{
             font-size: calc(0.5rem + 2vw);            
         }
 }

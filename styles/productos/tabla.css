@@ -4,7 +4,7 @@ main .cntProductos{
     height: 90%;
 }
 
-/*contenedor principal de la tabla de usuarios*/
+/*Contenedor principal de la tabla de usuarios*/
 main .cntProductos .ctnTabla{
     width: 100%;
     height: 90%;
@@ -13,7 +13,7 @@ main .cntProductos .ctnTabla{
     overflow-y: scroll;
 }
 
-/*tabla*/
+/*Tabla*/
 main .cntProductos .ctnTabla table{
     width: 100%;
     border-spacing: 0px;
@@ -22,7 +22,7 @@ main .cntProductos .ctnTabla table{
     table-layout: fixed;
 }
 
-/*encabezado de la tabla*/
+/*Encabezado de la tabla*/
 main .cntProductos .ctnTabla table thead{
     position: sticky;
     top: 0;
@@ -30,12 +30,12 @@ main .cntProductos .ctnTabla table thead{
     width: 100%;
 }
 
-/*filas*/
+/*Filas*/
 main .cntProductos .ctnTabla table thead tr{
     border: 1px solid black;
 }
 
-/*columnas*/
+/*Columnas*/
 main .cntProductos .ctnTabla table thead tr th{
     padding: 0.1%;
     text-align: center;
@@ -46,13 +46,14 @@ main .cntProductos .ctnTabla table thead tr th{
     border: 1px solid black;
 }
 
+/*Cuerpo de la tabla*/
 main .cntProductos .ctnTabla table tbody{
     background-color: rgb(255, 255, 255); 
     width: 100%;
     color: black;
 }
 
-/*campos del cuerpo*/
+/*Celda de cada fila*/
 main .cntProductos .ctnTabla table tbody tr td{
     border-bottom: 1px solid black;
     padding: 0.2%;
@@ -64,7 +65,7 @@ main .cntProductos .ctnTabla table tbody tr td{
     text-overflow: ellipsis;
 }
 
-/*iconos de editar y borrar*/
+/*Iconos de editar y borrar*/
 main .cntProductos .ctnTabla table tbody tr td svg{
     cursor: pointer;
     width: calc(0.5rem + 1.4vw);
@@ -72,7 +73,7 @@ main .cntProductos .ctnTabla table tbody tr td svg{
     fill: rgb(51, 51, 51);
 }
 
-/*icono de eliminar*/
+/*Icono de eliminar*/
 main .cntProductos .ctnTabla table tbody tr td .iconoEliminar{
     fill: red;
 }
@@ -94,39 +95,28 @@ main .cntProductos .ctnTabla table tbody tr td .iconoEliminar{
 /* MOVILES */
 @media screen and
     (max-width: 720px){
-       /*contenedor principal de la tabla de usuarios*/
+       /*Contenedor principal de la tabla de usuarios*/
         main .cntProductos .ctnTabla{
             overflow-x: scroll;
         }
-        /*tabla*/
+        /*Tabla*/
         main .cntProductos .ctnTabla table{
             width: 180%;
         }
-        /*columnas*/
+        /*Columnas*/
         main .cntProductos .ctnTabla table thead tr th{
             padding: 0.1%;
             font-size: calc(0.5rem + 1.4vw);
         }
-        /*campos del cuerpo*/
+        /*Celda de cada fila*/
         main .cntProductos .ctnTabla table tbody tr td{
             padding: 0.3%;
             font-size: calc(0.5rem + 1.4vw);
         }
-        /*icono de ver más*/
+        /*Iconos de editar y borrar*/
         main .cntProductos .ctnTabla table tbody tr td svg{
             width: calc(0.5rem + 4vw);
             height: calc(0.5rem + 4vw);
-            /* enable-background: 0 0 24 24; */
-        }
-        /*Columnas de las tablas (especificarles su anchura segun el dato)*/
-        .username, .telefono{
-            width: 14%;
-        }
-        .nombre, .correo{
-            width: 25%;
-        }
-        .strikes, .rol{
-            width: 8%;
         }
 }
 
@@ -134,34 +124,23 @@ main .cntProductos .ctnTabla table tbody tr td .iconoEliminar{
 @media screen and
     (min-width: 720px) and
     (max-width: 1024px){
-        /*contenedor principal de la tabla de usuarios*/
+        /*Contenedor principal de la tabla de usuarios*/
         main .cntProductos .ctnTabla{
             height: 100%;
         }
-        /*columnas*/
+        /*Columnas*/
         main .cntProductos .ctnTabla table thead tr th{
             padding: 0.1%;
             font-size: calc(0.5rem + 0.8vw);
         }
-        /*campos del cuerpo*/
+        /*Celda de cada fila*/
         main .cntProductos .ctnTabla table tbody tr td{
             padding: 0.3%;
             font-size: calc(0.5rem + 0.8vw);
         }
-        /*icono de ver más*/
+        /*Iconos de editar y borrar*/
         main .cntProductos .ctnTabla table tbody tr td svg{
             width: calc(0.5rem + 2.2vw);
             height: calc(0.5rem + 2.2vw);
-            /* enable-background: 0 0 24 24; */
-        }
-        /*Columnas de las tablas (especificarles su anchura segun el dato)*/
-        .username, .telefono{
-            width: 14%;
-        }
-        .nombre, .correo{
-            width: 25%;
-        }
-        .strikes, .rol{
-            width: 8%;
         }
 }

@@ -26,7 +26,7 @@ main .cntProductos .cntBuscador .buscador:focus-within{
     border: 2px solid rgb(0, 0, 0);
 }
 
-/*input text del buscador*/
+/*Input text del buscador*/
 main .cntProductos .cntBuscador input[type="text"]{
     width: 90%;
     font-family: sans-serif;
@@ -41,7 +41,7 @@ main .cntProductos .cntBuscador input[type="text"]{
     padding-right: 2%;
     color: black; 
 }
-/*icono de la lupa*/
+/*Icono de la lupa*/
 main .cntProductos .cntBuscador svg{
     width: 10%;
     height: 80%;
@@ -52,7 +52,7 @@ main .cntProductos .cntBuscador svg{
 @media screen and
     (max-width: 720px){
 
-        /*contenedor del Buscador*/
+        /*Contenedor del Buscador*/
         main .cntProductos .cntBuscador{
             height: 8%;
             justify-content: center;
@@ -64,7 +64,7 @@ main .cntProductos .cntBuscador svg{
             height: 70%;
         }
 
-        /*input text del buscador*/
+        /*Input text del buscador*/
         main .cntProductos .cntBuscador input[type="text"]{
             font-size: calc(0.5rem + 2vw);
         }
@@ -74,7 +74,7 @@ main .cntProductos .cntBuscador svg{
 @media screen and
     (min-width: 720px) and
     (max-width: 1024px){
-        /*contenedor del Buscador*/
+        /*Contenedor del Buscador*/
         main .cntProductos .cntBuscador{
             height: 8%;
         }
@@ -85,7 +85,7 @@ main .cntProductos .cntBuscador svg{
             height: 60%;
         }
 
-        /*input text del buscador*/
+        /*Input text del buscador*/
         main .cntProductos .cntBuscador input[type="text"]{
             font-size: calc(0.5rem + 1.5vw);
         }
