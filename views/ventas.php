@@ -16,6 +16,6 @@
     <title>Punto de ventas</title>
 </head>
 <body>
-    <?php include_once ('header.php');?>
+    <?php include_once ('recursos/header.php');?>
 </body>
 </html>

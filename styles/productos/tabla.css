@@ -64,13 +64,17 @@ main .cntProductos .ctnTabla table tbody tr td{
     text-overflow: ellipsis;
 }
 
-/*icono de ver más*/
+/*iconos de editar y borrar*/
 main .cntProductos .ctnTabla table tbody tr td svg{
     cursor: pointer;
-    width: calc(0.5rem + 1.8vw);
-    height: calc(0.5rem + 1.8vw);
-    /* enable-background: 0 0 24 24; */
-    fill: rgb(0, 0, 0);
+    width: calc(0.5rem + 1.4vw);
+    height: calc(0.5rem + 1.4vw);
+    fill: rgb(51, 51, 51);
+}
+
+/*icono de eliminar*/
+main .cntProductos .ctnTabla table tbody tr td .iconoEliminar{
+    fill: red;
 }
 
 /*Columnas de las tablas (especificarles su anchura segun el dato)*/
