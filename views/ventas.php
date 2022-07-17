@@ -8,6 +8,7 @@
         require_once("../config/consultas.php");
         $consulta =  new consultas(); //instanciamos el objeto
         $facturas = $consulta->facturas(); //obtenemos las facturas de la bd
+        $productos = $consulta->productos(); //obtenemos los productos de la bd
     }
 ?>
 <!DOCTYPE html>
@@ -66,7 +67,12 @@
                             <tr>
                                 <td class="id"><?php echo $factura['id']; ?></td>
                                 <td class="nombre"><?php echo $factura['usuario']; ?></td>
-                                <td class="fecha"><?php echo $factura['fecha']; ?></td>
+                                <td class="fecha">
+                                    <?php 
+                                        setlocale(LC_ALL, "es_ES", 'Spanish_Spain', 'Spanish');
+                                        echo utf8_encode(strftime("%A, %d de %B de %Y, %I:%M %p ", strtotime($factura['fecha'])).date(' a', strtotime($factura['fecha'])));
+                                    ?>
+                                </td>
                                 <td class="editar"><object data="../iconos/editar.svg" type="image/svg+xml"></object></td>
                                 <td class="eliminar"><object data="../iconos/eliminar.svg" type="image/svg+xml"></object></td>
                             </tr>

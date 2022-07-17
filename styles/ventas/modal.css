@@ -10,67 +10,98 @@
     align-items: center;
 }
 
-/*Formulario*/
-.cntModalVenta form{
-    width: 35%;
-    height: auto;
-    border: 1px solid black;
-    border-radius: 10px;
+/*Contenedor general de los datos*/
+.cntModalVenta .cntGeneralVenta{
+    width: 80%;
+    height: 80%;
     background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.66);
     padding: 1%;
 }
 
+/*Detalles de la venta (titulo, folio y fecha)*/
+.cntModalVenta .cntGeneralVenta .detalles{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
 
 /*Titulo del modal*/
-.cntModalVenta h3{
+.cntModalVenta .cntGeneralVenta .detalles h3{
     font-family: sans-serif;
-    color: black;
-    font-size: calc(0.5rem + 1.5vw);
+    font-size: calc(0.5rem + 1.8vw);
     text-align: center;
 }
 
+/*Folio y Fecha*/
+.cntModalVenta .cntGeneralVenta .detalles h4{
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 1vw);
+    text-align: center;
+    margin-left: 10%;
+}
+
+#folioVenta, #fechaVenta{
+    margin-left: 1%;
+    font-weight: 400
+}
+
+/*Formulario*/
+.cntModalVenta form{
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+
+
 /*Contenedor donde va el label e input text (campo)*/
 .cntModalVenta form .campo{
-    width: 100%;
+    width: 40%;
     font-family: sans-serif;
-    color: black;
     font-size: calc(0.5rem + 0.75vw);
-    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Entrada de datos (nombre, descripcion y precio)*/
-.cntModalVenta form .campo input[type="text"]{
-    margin-top: 1.5%;
-    width: 100%;
+.cntModalVenta form .campo input[type="text"],
+.cntModalVenta form .campo select{
+    width: 60%;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
     outline: none;
     font-family: sans-serif;
     font-size: calc(0.5rem + 1.4vh);
-}
-/*Contenedor de los botones*/
-.cntModalVenta form .cntBotones{
-    width: 100%;
-    text-align: center;
-    margin-top: 2%;
+    border: 0;
+    border-bottom: 1px solid black;
 }
 
-/*Botones de cancelar y aceptar*/
-.cntModalVenta form .cntBotones input[type="button"],
-.cntModalVenta form .cntBotones input[type="submit"]{
+/*Cada opcion del select*/
+.cntModalVenta form .campo select option{
+    padding: 0.2;
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 1.4vh);
+}
+/*Botones de agregar producto*/
+.cntModalVenta form input[type="submit"]{
     border-radius: 5px;
-    padding: 1%;
+    padding: 0.5%;
     border: 1px solid black;
     margin-left: 2%;
     font-size: calc(0.5rem + 0.75vw);
     cursor: pointer;
     background-color:white;
-    
 }
 
-.cntModalVenta form .cntBotones input[type="button"]:hover,
-.cntModalVenta form .cntBotones input[type="submit"]:hover{
+.cntModalVenta form input[type="submit"]:hover{
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
 }
 
@@ -84,6 +115,48 @@
     font-family: sans-serif;
     font-size: calc(0.5rem + 1.2vh);
     color: red;
+}
+
+
+/*Contenedor de los totales y de los botones*/
+.cntModalVenta .cntTotales,
+.cntModalVenta .cntBotones{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Contenedor de cada campo de totales*/
+.cntModalVenta .cntTotales .campo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 1.2vh);
+}
+
+/*Label para colocar el total*/
+.cntModalVenta .cntTotales .campo .totalProductos,
+.cntModalVenta .cntTotales .campo .totalVenta{
+    border-bottom: 1px solid black;
+}
+
+/*Botones de cancelar y eliminar*/
+.cntModalVenta .cntBotones input[type="button"]{
+    border-radius: 5px;
+    padding: 0.5%;
+    border: 1px solid black;
+    margin-left: 2%;
+    font-size: calc(0.5rem + 0.75vw);
+    cursor: pointer;
+    background-color:white;
+}
+
+.cntModalVenta .cntBotones input[type="button"]:hover{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
 }
 
 /* MOVILES */

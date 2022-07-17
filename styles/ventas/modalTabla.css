@@ -1,0 +1,80 @@
+/*Contenedor principal de la tabla de productos de la venta*/
+.cntModalVenta .cntGeneralVenta .cntTablaModal{
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
+}
+
+/*Tabla*/
+.cntModalVenta .cntGeneralVenta .cntTablaModal table{
+    width: 100%;
+    border-spacing: 0px;
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    table-layout: fixed;
+}
+
+/*Encabezado de la tabla*/
+.cntModalVenta .cntGeneralVenta .cntTablaModal table thead{
+    position: sticky;
+    top: 0;
+    background-color: rgb(49, 49, 49); 
+    width: 100%;
+}
+
+/*Filas*/
+.cntModalVenta .cntGeneralVenta .cntTablaModal table thead tr{
+    border: 1px solid black;
+}
+
+/*Columnas*/
+.cntModalVenta .cntGeneralVenta .cntTablaModal table thead tr th{
+    padding: 0.1%;
+    text-align: center;
+    color: white;
+    font-size: calc(0.5rem + 0.75vw);
+    font-family: sans-serif;
+    font-weight: lighter;
+    border: 1px solid black;
+}
+
+/*Cuerpo de la tabla*/
+.cntModalVenta .cntGeneralVenta .cntTablaModal table tbody{
+    background-color: rgb(255, 255, 255); 
+    width: 100%;
+    color: black;
+}
+
+/*Celda de cada fila*/
+.cntModalVenta .cntGeneralVenta .cntTablaModal table tbody tr td{
+    border-bottom: 1px solid black;
+    padding: 0.2%;
+    font-size: calc(0.5rem + 0.6vw);
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*Iconos de editar y borrar*/
+.cntModalVenta .cntGeneralVenta .cntTablaModal table tbody tr td object{
+    width: calc(0.5rem + 1.4vw);
+    height: calc(0.5rem + 1.4vw);
+}
+.cntModalVenta .cntGeneralVenta .cntTablaModal table tbody tr td object:hover{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+/*Columnas de las tablas (especificarles su anchura segun el dato)*/
+.editar, .borrar, .precio, .total, .cantidad{
+    width: 10%;
+}
+.nombre{
+    width: 15%;
+}
+.descripción{
+    width: 30%;
+}
+

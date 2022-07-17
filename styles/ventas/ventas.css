@@ -1,6 +1,7 @@
 @import url('buscador.css');
 @import url('tabla.css');
 @import url('modal.css');
+@import url('modalTabla.css');
 *{
     margin: 0;
     padding: 0;

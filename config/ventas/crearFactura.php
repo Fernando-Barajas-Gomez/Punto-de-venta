@@ -53,6 +53,12 @@
                     $resultado=$consulta2->get_result();
                     $factura = mysqli_fetch_assoc($resultado);
 
+                    //damos formato a la fecha para devolverla como string
+                    setlocale(LC_ALL, "es_ES", 'Spanish_Spain', 'Spanish');
+                    $fecha = utf8_encode(strftime("%A, %d de %B de %Y, %I:%M %p ", strtotime($fecha)).date('a', strtotime($fecha)));
+                     
+                    //los asignamos al objeto
+                    $validaciones -> fecha = $fecha;
                     $validaciones -> id = $factura['id'];
                 }
                 else{//si la ejecucion no tuvo exito
