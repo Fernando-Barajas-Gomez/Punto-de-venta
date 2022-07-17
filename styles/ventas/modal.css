@@ -1,0 +1,138 @@
+/*Contenedor principal para que abarque toda la pantalla*/
+.cntModalVenta{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Formulario*/
+.cntModalVenta form{
+    width: 35%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1%;
+}
+
+
+/*Titulo del modal*/
+.cntModalVenta h3{
+    font-family: sans-serif;
+    color: black;
+    font-size: calc(0.5rem + 1.5vw);
+    text-align: center;
+}
+
+/*Contenedor donde va el label e input text (campo)*/
+.cntModalVenta form .campo{
+    width: 100%;
+    font-family: sans-serif;
+    color: black;
+    font-size: calc(0.5rem + 0.75vw);
+    margin-top: 2%;
+}
+
+/*Entrada de datos (nombre, descripcion y precio)*/
+.cntModalVenta form .campo input[type="text"]{
+    margin-top: 1.5%;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    outline: none;
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 1.4vh);
+}
+/*Contenedor de los botones*/
+.cntModalVenta form .cntBotones{
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+/*Botones de cancelar y aceptar*/
+.cntModalVenta form .cntBotones input[type="button"],
+.cntModalVenta form .cntBotones input[type="submit"]{
+    border-radius: 5px;
+    padding: 1%;
+    border: 1px solid black;
+    margin-left: 2%;
+    font-size: calc(0.5rem + 0.75vw);
+    cursor: pointer;
+    background-color:white;
+    
+}
+
+.cntModalVenta form .cntBotones input[type="button"]:hover,
+.cntModalVenta form .cntBotones input[type="submit"]:hover{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
+}
+
+/*clase para ocultar elementos*/
+.oculto{
+    display: none;
+}
+
+/*Clase para los errores (label)*/
+.error{
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 1.2vh);
+    color: red;
+}
+
+/* MOVILES */
+@media screen and
+    (max-width: 720px){
+        /*contenedor central con los datos para preguntar*/
+        .cntModalVenta form{
+            width: 90%;
+            padding: 3%;
+        }
+        /*contenedor donde va el label e input text*/
+        .cntModalVenta form .campo{
+            font-size: calc(0.5rem + 2vw);
+        }
+
+        .cntModalVenta form .campo input[type="text"]{
+            font-size: calc(0.5rem + 2vw);
+        }
+        .cntModalVenta form .cntBotones{
+            margin-top: 3%;
+        }
+        .cntModalVenta form .cntBotones input[type="button"],
+        .cntModalVenta form .cntBotones input[type="submit"]{
+            font-size: calc(0.5rem + 2vw);            
+        }
+}
+
+/* TABLETS */
+@media screen and
+    (min-width: 720px) and
+    (max-width: 1024px){
+        /*contenedor central con los datos para preguntar*/
+        .cntModalVenta form{
+            width: 65%;
+            padding: 3%;
+        }
+        /*contenedor donde va el label e input text*/
+        .cntModalVenta form .campo{
+            font-size: calc(0.5rem + 2vw);
+        }
+
+        .cntModalVenta form .campo input[type="text"]{
+            font-size: calc(0.5rem + 2vw);
+        }
+        .cntModalVenta form .cntBotones{
+            margin-top: 3%;
+        }
+        .cntModalVenta form .cntBotones input[type="button"],
+        .cntModalVenta form .cntBotones input[type="submit"]{
+            font-size: calc(0.5rem + 2vw);            
+        }
+}

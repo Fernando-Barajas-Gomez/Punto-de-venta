@@ -1,11 +1,11 @@
 /*Contenedor de la tabla y el buscador*/
-main .cntProductos{
+main .cntVentas{
     width: 100%;
     height: 90%;
 }
 
 /*Contenedor principal de la tabla de usuarios*/
-main .cntProductos .ctnTabla{
+main .cntVentas .ctnTabla{
     width: 100%;
     height: 90%;
     padding: 1%;
@@ -14,7 +14,7 @@ main .cntProductos .ctnTabla{
 }
 
 /*Tabla*/
-main .cntProductos .ctnTabla table{
+main .cntVentas .ctnTabla table{
     width: 100%;
     border-spacing: 0px;
     /* border: 1px solid black; */
@@ -23,7 +23,7 @@ main .cntProductos .ctnTabla table{
 }
 
 /*Encabezado de la tabla*/
-main .cntProductos .ctnTabla table thead{
+main .cntVentas .ctnTabla table thead{
     position: sticky;
     top: 0;
     background-color: rgb(49, 49, 49); 
@@ -31,12 +31,12 @@ main .cntProductos .ctnTabla table thead{
 }
 
 /*Filas*/
-main .cntProductos .ctnTabla table thead tr{
+main .cntVentas .ctnTabla table thead tr{
     border: 1px solid black;
 }
 
 /*Columnas*/
-main .cntProductos .ctnTabla table thead tr th{
+main .cntVentas .ctnTabla table thead tr th{
     padding: 0.1%;
     text-align: center;
     color: white;
@@ -47,14 +47,14 @@ main .cntProductos .ctnTabla table thead tr th{
 }
 
 /*Cuerpo de la tabla*/
-main .cntProductos .ctnTabla table tbody{
+main .cntVentas .ctnTabla table tbody{
     background-color: rgb(255, 255, 255); 
     width: 100%;
     color: black;
 }
 
 /*Celda de cada fila*/
-main .cntProductos .ctnTabla table tbody tr td{
+main .cntVentas .ctnTabla table tbody tr td{
     border-bottom: 1px solid black;
     padding: 0.2%;
     font-size: calc(0.5rem + 0.6vw);
@@ -66,11 +66,11 @@ main .cntProductos .ctnTabla table tbody tr td{
 }
 
 /*Iconos de editar y borrar*/
-main .cntProductos .ctnTabla table tbody tr td object{
+main .cntVentas .ctnTabla table tbody tr td object{
     width: calc(0.5rem + 1.4vw);
     height: calc(0.5rem + 1.4vw);
 }
-main .cntProductos .ctnTabla table tbody tr td object:hover{
+main .cntVentas .ctnTabla table tbody tr td object:hover{
     border-bottom: 1px solid black;
     cursor: pointer;
 }
@@ -80,33 +80,31 @@ main .cntProductos .ctnTabla table tbody tr td object:hover{
     width: 10%;
 }
 .nombre{
-    width: 20%;
+    width: 30%;
 }
-.descripcion{
-    width: 40%;
+.fecha{
+    width: 30%;
 }
-.precio{
-    width: 15%;
-}
+
 
 /* MOVILES */
 @media screen and
     (max-width: 720px){
        /*Contenedor principal de la tabla de usuarios*/
-        main .cntProductos .ctnTabla{
+        main .cntVentas .ctnTabla{
             overflow-x: scroll;
         }
         /*Tabla*/
-        main .cntProductos .ctnTabla table{
+        main .cntVentas .ctnTabla table{
             width: 180%;
         }
         /*Columnas*/
-        main .cntProductos .ctnTabla table thead tr th{
+        main .cntVentas .ctnTabla table thead tr th{
             padding: 0.1%;
             font-size: calc(0.5rem + 1.4vw);
         }
         /*Celda de cada fila*/
-        main .cntProductos .ctnTabla table tbody tr td{
+        main .cntVentas .ctnTabla table tbody tr td{
             padding: 0.3%;
             font-size: calc(0.5rem + 1.4vw);
         }
@@ -122,21 +120,21 @@ main .cntProductos .ctnTabla table tbody tr td object:hover{
     (min-width: 720px) and
     (max-width: 1024px){
         /*Contenedor principal de la tabla de usuarios*/
-        main .cntProductos .ctnTabla{
+        main .cntVentas .ctnTabla{
             height: 100%;
         }
         /*Columnas*/
-        main .cntProductos .ctnTabla table thead tr th{
+        main .cntVentas .ctnTabla table thead tr th{
             padding: 0.1%;
             font-size: calc(0.5rem + 0.8vw);
         }
         /*Celda de cada fila*/
-        main .cntProductos .ctnTabla table tbody tr td{
+        main .cntVentas .ctnTabla table tbody tr td{
             padding: 0.3%;
             font-size: calc(0.5rem + 0.8vw);
         }
         /*Iconos de editar y borrar*/
-        main .cntProductos .ctnTabla table tbody tr td svg{
+        main .cntVentas .ctnTabla table tbody tr td svg{
             width: calc(0.5rem + 2.2vw);
             height: calc(0.5rem + 2.2vw);
         }
