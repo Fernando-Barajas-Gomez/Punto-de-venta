@@ -42,7 +42,7 @@ main .cntProductos .cntBuscador input[type="text"]{
     color: black; 
 }
 /*Icono de la lupa*/
-main .cntProductos .cntBuscador svg{
+main .cntProductos .cntBuscador object{
     width: 10%;
     height: 80%;
     fill: black;

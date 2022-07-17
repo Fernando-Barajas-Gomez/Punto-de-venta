@@ -52,7 +52,7 @@
     function peticion(formulario){
         let solicitud = new XMLHttpRequest(); //creamos una solicitud        
         const FD = new FormData(formulario); // objeto para enviarlo mediante ajax
-        solicitud.open("POST", "config/login/iniciarSesion.php", true); //para manejar la solicitud asincronamente(true) y enviamos los datos
+        solicitud.open("POST", "config/login/iniciarSesion.php", true);
         solicitud.setRequestHeader('X-Request-With', 'bo48NKV7QO6ytRloRKE6KZTKt7rygR8kcmLDhoZozUVwXx1hoNFdRVnRU4Q0VlY5'); //coloca una llave para la solicitud AJAX desde el lado del cliente
         solicitud.send(FD);//inicia la solicitud/peticion
         
