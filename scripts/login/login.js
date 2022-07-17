@@ -68,7 +68,7 @@
                     
                     if(validaciones.usuario==true){ //si el usuario existe
                         form.reset();
-                        window.location.href="/views/consultaVentas.php"; //se redirecciona a la siguiente pagina
+                        window.location.href="/views/ventas.php"; //se redirecciona a la siguiente pagina
                     }
                     else{ //si el usuario no existe
                         window.alert("Datos erróneos:\nRevisar el usuario y/o contraseña ingresada.");

@@ -1,0 +1,163 @@
+/*Contenedor de la tabla y el buscador*/
+main .cntProductos{
+    width: 100%;
+    height: 90%;
+}
+
+/*contenedor principal de la tabla de usuarios*/
+main .cntProductos .ctnTabla{
+    width: 100%;
+    height: 90%;
+    padding: 1%;
+    padding-top: 0%;
+    overflow-y: scroll;
+}
+
+/*tabla*/
+main .cntProductos .ctnTabla table{
+    width: 100%;
+    border-spacing: 0px;
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    table-layout: fixed;
+}
+
+/*encabezado de la tabla*/
+main .cntProductos .ctnTabla table thead{
+    position: sticky;
+    top: 0;
+    background-color: rgb(49, 49, 49); 
+    width: 100%;
+}
+
+/*filas*/
+main .cntProductos .ctnTabla table thead tr{
+    border: 1px solid black;
+}
+
+/*columnas*/
+main .cntProductos .ctnTabla table thead tr th{
+    padding: 0.1%;
+    text-align: center;
+    color: white;
+    font-size: calc(0.5rem + 0.75vw);
+    font-family: sans-serif;
+    font-weight: lighter;
+    border: 1px solid black;
+}
+
+main .cntProductos .ctnTabla table tbody{
+    background-color: rgb(255, 255, 255); 
+    width: 100%;
+    color: black;
+}
+
+/*campos del cuerpo*/
+main .cntProductos .ctnTabla table tbody tr td{
+    border-bottom: 1px solid black;
+    padding: 0.2%;
+    font-size: calc(0.5rem + 0.6vw);
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*icono de ver más*/
+main .cntProductos .ctnTabla table tbody tr td svg{
+    cursor: pointer;
+    width: calc(0.5rem + 1.8vw);
+    height: calc(0.5rem + 1.8vw);
+    /* enable-background: 0 0 24 24; */
+    fill: rgb(0, 0, 0);
+}
+
+/*Columnas de las tablas (especificarles su anchura segun el dato)*/
+.editar, .borrar{
+    width: 10%;
+}
+.nombre{
+    width: 20%;
+}
+.descripcion{
+    width: 40%;
+}
+.precio{
+    width: 15%;
+}
+
+/* MOVILES */
+@media screen and
+    (max-width: 720px){
+       /*contenedor principal de la tabla de usuarios*/
+        main .cntProductos .ctnTabla{
+            overflow-x: scroll;
+        }
+        /*tabla*/
+        main .cntProductos .ctnTabla table{
+            width: 180%;
+        }
+        /*columnas*/
+        main .cntProductos .ctnTabla table thead tr th{
+            padding: 0.1%;
+            font-size: calc(0.5rem + 1.4vw);
+        }
+        /*campos del cuerpo*/
+        main .cntProductos .ctnTabla table tbody tr td{
+            padding: 0.3%;
+            font-size: calc(0.5rem + 1.4vw);
+        }
+        /*icono de ver más*/
+        main .cntProductos .ctnTabla table tbody tr td svg{
+            width: calc(0.5rem + 4vw);
+            height: calc(0.5rem + 4vw);
+            /* enable-background: 0 0 24 24; */
+        }
+        /*Columnas de las tablas (especificarles su anchura segun el dato)*/
+        .username, .telefono{
+            width: 14%;
+        }
+        .nombre, .correo{
+            width: 25%;
+        }
+        .strikes, .rol{
+            width: 8%;
+        }
+}
+
+/* TABLETS */
+@media screen and
+    (min-width: 720px) and
+    (max-width: 1024px){
+        /*contenedor principal de la tabla de usuarios*/
+        main .cntProductos .ctnTabla{
+            height: 100%;
+        }
+        /*columnas*/
+        main .cntProductos .ctnTabla table thead tr th{
+            padding: 0.1%;
+            font-size: calc(0.5rem + 0.8vw);
+        }
+        /*campos del cuerpo*/
+        main .cntProductos .ctnTabla table tbody tr td{
+            padding: 0.3%;
+            font-size: calc(0.5rem + 0.8vw);
+        }
+        /*icono de ver más*/
+        main .cntProductos .ctnTabla table tbody tr td svg{
+            width: calc(0.5rem + 2.2vw);
+            height: calc(0.5rem + 2.2vw);
+            /* enable-background: 0 0 24 24; */
+        }
+        /*Columnas de las tablas (especificarles su anchura segun el dato)*/
+        .username, .telefono{
+            width: 14%;
+        }
+        .nombre, .correo{
+            width: 25%;
+        }
+        .strikes, .rol{
+            width: 8%;
+        }
+}

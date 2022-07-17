@@ -1,0 +1,92 @@
+/*contenedor del Buscador*/
+main .cntProductos .cntBuscador{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+/*Buscador*/
+main .cntProductos .cntBuscador .buscador{
+    width: 30%;
+    height: 70%;
+    margin-right: 2%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.343);
+}
+/*Focus en el buscador si es presionado el input*/
+main .cntProductos .cntBuscador .buscador:focus-within{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/*input text del buscador*/
+main .cntProductos .cntBuscador input[type="text"]{
+    width: 90%;
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 0.8vw);
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    background: transparent; 
+    outline: none;
+    border: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black; 
+}
+/*icono de la lupa*/
+main .cntProductos .cntBuscador svg{
+    width: 10%;
+    height: 80%;
+    fill: black;
+}
+
+/* MOVILES */
+@media screen and
+    (max-width: 720px){
+
+        /*contenedor del Buscador*/
+        main .cntProductos .cntBuscador{
+            height: 8%;
+            justify-content: center;
+        }
+
+       /*Buscador*/
+        main .cntProductos .cntBuscador .buscador{
+            width: 90%;
+            height: 70%;
+        }
+
+        /*input text del buscador*/
+        main .cntProductos .cntBuscador input[type="text"]{
+            font-size: calc(0.5rem + 2vw);
+        }
+}
+
+/* TABLETS */
+@media screen and
+    (min-width: 720px) and
+    (max-width: 1024px){
+        /*contenedor del Buscador*/
+        main .cntProductos .cntBuscador{
+            height: 8%;
+        }
+
+       /*Buscador*/
+        main .cntProductos .cntBuscador .buscador{
+            width: 50%;
+            height: 60%;
+        }
+
+        /*input text del buscador*/
+        main .cntProductos .cntBuscador input[type="text"]{
+            font-size: calc(0.5rem + 1.5vw);
+        }
+}

@@ -1,7 +1,3 @@
-<?php
-    //https://www.doabledanny.com/Deploy-PHP-And-MySQL-to-Heroku
-    //mysql://be22cb1bbe0616:dfb9dc9e@us-cdbr-east-06.cleardb.net/heroku_25a5b06ae795ac4?reconnect=true
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

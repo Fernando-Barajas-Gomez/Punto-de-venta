@@ -1,0 +1,105 @@
+@import url('buscador.css');
+@import url('tabla.css');
+@import url('modal.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(224, 224, 224);
+}
+
+/*contenido de la vista (tablas, y todo lo que va debajo del header)*/
+body main{
+    width: 100%;
+    height: 90%;  
+    position: absolute;
+    top: 10%;
+   
+}
+
+/*contenedor del boton de agregar producto*/
+main .cntBotonAgregar{
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+}
+
+/*titulo h1*/
+main .cntBotonAgregar h1{
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 3.5vh);
+    float: left;
+}
+
+/*Botón de agregar producto*/
+main .cntBotonAgregar input[type="button"]{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 1.5vh);
+    outline: none;
+    background-color: white;
+    float: right;
+}
+
+/*Botón de agregar producto*/
+main .cntBotonAgregar input[type="button"]:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.719);
+}
+
+/*clase para ocultar elementos*/
+.oculto{
+    display: none;
+}
+
+/* Moviles */
+@media screen and
+    (max-width: 720px){
+
+        /*contenedor del boton de agregar producto*/
+        main .cntBotonAgregar{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        /*titulo h1*/
+        main .cntBotonAgregar h1{
+            font-size: calc(0.5rem + 2.0vh);
+            text-align: center;
+        }
+
+        /*Botón de agregar producto*/
+        main .cntBotonAgregar input[type="button"]{
+            font-size: calc(0.5rem + 1.5vh);
+            width: 60%;
+            margin-left: 20%;
+        }
+}
+
+/* Tablets */
+@media screen and
+    (min-width: 720px) and
+    (max-width: 1024px){
+
+        /*titulo h1*/
+        main .cntBotonAgregar h1{
+            font-size: calc(0.5rem + 2.4vh);
+            text-align: center;
+        }
+
+        /*Botón de agregar producto*/
+        main .cntBotonAgregar input[type="button"]{
+            font-family: sans-serif;
+            font-size: calc(0.5rem + 1.8vh);
+            margin-right: 2%;
+        }
+}
