@@ -69,8 +69,8 @@
                                 <td class="nombre"><?php echo $producto['nombre']; ?></td>
                                 <td class="descripcion"><?php echo $producto['descripcion']; ?></td>
                                 <td class="precio"><?php echo "$".number_format($producto['precio'], 2, '.', ''); ?></td>
-                                <td class="editar"><div><object data="../iconos/editar.svg" type="image/svg+xml"></object></div></td>
-                                <td class="eliminar"><div><object data="../iconos/eliminar.svg" type="image/svg+xml"></object></div></td>
+                                <td class="editar"><div class="btnEditarProducto"><object data="../iconos/editar.svg" type="image/svg+xml"></object></div></td>
+                                <td class="eliminar"><div class="btnEliminarProducto"><object data="../iconos/eliminar.svg" type="image/svg+xml"></object></div></td>
                             </tr>
                         <?php endforeach;?> 
                             <tr class='oculto' id="encontrado">
@@ -83,5 +83,7 @@
     </main>
     <script src="../scripts/productos/agregarProducto.js"></script>
     <script src="../scripts/productos/buscarProducto.js"></script>
+    <script src="../scripts/productos/editarProducto.js"></script>
+    <script src="../scripts/productos/eliminarProducto.js"></script>
 </body>
 </html>
