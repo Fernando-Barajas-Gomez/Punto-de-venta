@@ -79,7 +79,7 @@
                             </tr>
                         <?php endforeach;?> 
                             <tr class='oculto' id="encontrado">
-                                <td colspan="6">Folio no encontrado</td>
+                                <td colspan="5">Folio no encontrado</td>
                             </tr>
                     </tbody>  
                 </table>                          

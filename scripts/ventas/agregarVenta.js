@@ -12,6 +12,7 @@
         btnCrearVenta.disabled=true; //deshabilitamos el boton de crear factura
         let factura = await crearFactura(); //esperamos a que se cree la factura
         if(factura){ //si se creo, mostramos el modal
+            limpiarTabla(); //limpiamos las filas agregadas dinamicamente a la tabla
             mostrarModal(); //mostramos el modal de ventas
             btnCrearVenta.disabled=false; //habilitamos el boton de crear factura
         }
@@ -31,6 +32,18 @@
             insertarVenta(idProducto, cantidad, idFactura);
         }
     });
+
+    /**Funcion encargada de limpiar todas las filas agregadas dinamicamente */
+    function limpiarTabla(){
+
+        //obtenemos el cuerpo de la tabla
+        let tabla = document.getElementById("cuerpoTablaModal"),
+            filas = tabla.getElementsByTagName("tr"); //las filas
+
+        for(let i=filas.length-1;i>=0;i--){
+            tabla.deleteRow(i);
+        }
+    }
 
     /**Funcion encargada de enviar los datos a la BD para insertar la nueva venta a la factura*/
     function insertarVenta(idProducto, cantidad, idFactura){
