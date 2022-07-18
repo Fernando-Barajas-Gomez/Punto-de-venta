@@ -69,8 +69,8 @@
                                 <td class="nombre"><?php echo $producto['nombre']; ?></td>
                                 <td class="descripcion"><?php echo $producto['descripcion']; ?></td>
                                 <td class="precio"><?php echo "$".number_format($producto['precio'], 2, '.', ''); ?></td>
-                                <td class="editar"><object data="../iconos/editar.svg" type="image/svg+xml"></object></td>
-                                <td class="eliminar"><object data="../iconos/eliminar.svg" type="image/svg+xml"></object></td>
+                                <td class="editar"><div><object data="../iconos/editar.svg" type="image/svg+xml"></object></div></td>
+                                <td class="eliminar"><div><object data="../iconos/eliminar.svg" type="image/svg+xml"></object></div></td>
                             </tr>
                         <?php endforeach;?> 
                             <tr class='oculto' id="encontrado">

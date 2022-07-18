@@ -74,8 +74,8 @@
                                         echo utf8_encode(strftime("%A, %d de %B de %Y, %I:%M %p ", strtotime($factura['fecha'])).date(' a', strtotime($factura['fecha'])));
                                     ?>
                                 </td>
-                                <td class="editar"><object data="../iconos/editar.svg" type="image/svg+xml"></object></td>
-                                <td class="eliminar"><object data="../iconos/eliminar.svg" type="image/svg+xml"></object></td>
+                                <td class="editar"><div class="btnEditarVenta"><object data="../iconos/editar.svg" type="image/svg+xml" style="pointer-events:none"></object></div></td>
+                                <td class="eliminar"><div class="btnEliminarVenta"><object data="../iconos/eliminar.svg" type="image/svg+xml"></div></object></td>
                             </tr>
                         <?php endforeach;?> 
                             <tr class='oculto' id="encontrado">
@@ -89,5 +89,6 @@
 
     <script src="../scripts/ventas/agregarVenta.js"></script>
     <script src="../scripts/ventas/buscarFolio.js"></script>
+    <script src="../scripts/ventas/editarVenta.js"></script>
 </body>
 </html>
