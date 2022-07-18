@@ -1,13 +1,13 @@
 <!--Modal para agregar y editar alguna venta-->
-<div class="cntModalVenta" id="modalVenta">
+<div class="cntModalVenta oculto" id="modalVenta">
     <div class="cntGeneralVenta">
         <!--Detalles de la venta-->
         <div class="detalles">
             <h3>Venta</h3>
             <h4>Folio:</h4>
-            <h4 id="folioVenta">asdfa</h2>
+            <h4 id="folioVenta"></h2>
             <h4>Fecha:</h4>
-            <h4 id="fechaVenta">asdfasdf</h2>
+            <h4 id="fechaVenta"></h2>
         </div>
         <!--Contenedor para agregarle productos-->
         <form action="" id="formVenta">
@@ -80,7 +80,7 @@
         </div>
         <!--Elementos de total de productos y total-->
         <div class="cntBotones">
-            <input type="button" value="Cerrar">
+            <input type="button" value="Cerrar" id="btnCerrarVenta">
             <input type="button" value="Eliminar">
         </div>
     </div>

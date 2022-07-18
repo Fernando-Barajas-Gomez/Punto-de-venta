@@ -1,9 +1,11 @@
 (function(){
 
     //obtenemos los elementos que contendran algun evento
-    var btnCrearVenta = document.getElementById("btnCrearVenta");
+    var btnCrearVenta = document.getElementById("btnCrearVenta"),
+        btnCerrarModal = document.getElementById("btnCerrarVenta");
 
     //agregamos los eventos a cada boton
+    btnCerrarModal.addEventListener("click", mostrarModal);
     btnCrearVenta.addEventListener("click", async () => {
         btnCrearVenta.disabled=true; //deshabilitamos el boton de crear factura
         let factura = await crearFactura(); //esperamos a que se cree la factura
@@ -12,7 +14,6 @@
             btnCrearVenta.disabled=false; //habilitamos el boton de crear factura
         }
     });
-
 
     /**Funcion que se encarga de mostrar y ocultar el modal de agregar productos */
     function mostrarModal(){

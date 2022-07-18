@@ -39,7 +39,8 @@
                 <div class="buscador" id="buscador">
                     <object data="../iconos/lupa.svg" type="image/svg+xml"></object>
                     <input type="text" placeholder="Buscar venta por folio, ejemplo: 120" id="buscarFolio">
-                </div>               
+                </div>   
+                <label for="" class="error" id="errorFolio"></label>            
             </div>
             <!--Tabla-->
             <div class="ctnTabla">
@@ -55,7 +56,7 @@
                         </tr>
                     </thead>
                     <!-- Cuerpo de la tabla -->
-                    <tbody id="cuerpoTabla">
+                    <tbody id="cuerpoTablaVentas">
                         <!--Si no existe ningún venta-->
                         <?php if($facturas->num_rows <= 0){
                             echo "<tr>
@@ -87,5 +88,6 @@
     </main>
 
     <script src="../scripts/ventas/agregarVenta.js"></script>
+    <script src="../scripts/ventas/buscarFolio.js"></script>
 </body>
 </html>
