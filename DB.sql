@@ -29,11 +29,15 @@ CREATE TABLE IF NOT EXISTS factura(
 CREATE TABLE IF NOT EXISTS ventas(
   id INT NOT NULL AUTO_INCREMENT,
   idFactura INT NOT NULL,
-  idProducto DATETIME DEFAULT CURRENT_TIMESTAMP,
+  idProducto INT NOT NULL,
   cantidad INT NOT NULL,
   PRIMARY KEY (id),
    CONSTRAINT FK_factura 
   FOREIGN KEY (idFactura)
   REFERENCES factura(id)
+    ON DELETE CASCADE,
+    CONSTRAINT FK_producto
+  FOREIGN KEY (idProducto)
+  REFERENCES productos(id)
     ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

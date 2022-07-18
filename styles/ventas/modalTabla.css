@@ -56,11 +56,19 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+/*Contenedor del icono editar y eliminar*/
+main .cntVentas .ctnTabla table tbody tr td div{
+    width: calc(0.5rem + 1.4vw);
+    height: calc(0.5rem + 1.4vw);
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
 /*Iconos de editar y borrar*/
 .cntModalVenta .cntGeneralVenta .cntTablaModal table tbody tr td object{
     width: calc(0.5rem + 1.4vw);
     height: calc(0.5rem + 1.4vw);
+    pointer-events: none;
 }
 .cntModalVenta .cntGeneralVenta .cntTablaModal table tbody tr td object:hover{
     border-bottom: 1px solid black;

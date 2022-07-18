@@ -13,7 +13,7 @@
         <form action="" id="formVenta">
             <div class="campo">
                 <label for="producto">*Producto:</label>
-                <select name="" id="">
+                <select name="producto" id="formProducto">
                     <!--Colocamos cada producto-->
                     <?php foreach($productos as $producto): ?>
                         <option value="<?php echo $producto['id']; ?>"><?php echo $producto['nombre']; ?></option>
@@ -23,11 +23,12 @@
             </div>
             <div class="campo">
                 <label for="cantidad">*Cantidad:</label>
-                <input type="text" name="cantidad" id="cantidad" placeholder="Ejemplo: 2">
-                <label class="error" id="errorNombre"></label>
+                <input type="text" name="cantidad" id="formCantidad" placeholder="Ejemplo: 2">
             </div>
             <input type="submit" value="Agregar Producto" id="btnAgregarProducto">
         </form>
+        <!--Label para mostrar los errores al agregar un producto a la venta-->
+        <label class="error" id="errorCantidad"></label>
         <!--Cada producto añadido-->
         <!--Tabla-->
         <div class="cntTablaModal">
@@ -36,7 +37,8 @@
                 <thead>
                     <tr>
                         <th class="no">No.</th>
-                        <th class="id oculto">ID</th>
+                        <th class="idProducto oculto">ID producto</th>
+                        <th class="idVenta oculto">ID venta</th>
                         <th class="nombre">Producto</th>
                         <th class="descripción">Descripcion</th>
                         <th class="cantidad">Cantidad</th> 
@@ -47,7 +49,7 @@
                     </tr>
                 </thead>
                 <!-- Cuerpo de la tabla -->
-                <tbody id="cuerpoTabla">
+                <tbody id="cuerpoTablaModal">
                     <!--Colocamos cada venta-->
                     <!-- <?php 
                         $i=1;
@@ -71,11 +73,11 @@
         <div class="cntTotales">
             <div class="campo">
                 <label for="">Total de productos:</label>
-                <label for="" id="totalProductos"></label>
+                <label for="" id="totalProductos">0</label>
             </div>
             <div class="campo">
                 <label for="">Total de venta:</label>
-                <label for="" id="totalVenta"></label>
+                <label for="" id="totalVenta">0</label>
             </div>
         </div>
         <!--Elementos de total de productos y total-->

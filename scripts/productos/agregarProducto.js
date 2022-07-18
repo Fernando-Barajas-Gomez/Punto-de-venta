@@ -92,6 +92,8 @@
             precio = document.createElement("td"), //celda con el precio
             tdEditar = document.createElement("td"), //celda del icono de editar
             tdEliminar = document.createElement("td"), //celda del icono de eliminar
+            cntIconoEditar = document.createElement("div"), //contenedor para el icono de editar
+            cntIconoEliminar = document.createElement("div") //contenedor para el icono de eliminar
             iconoEditar = document.createElement("object"), //icono de editar
             iconoEliminar = document.createElement("object"); //icono de eliminar
 
@@ -102,6 +104,8 @@
         precio.classList.add("precio");
         tdEditar.classList.add("editar");
         tdEliminar.classList.add("eliminar");
+        cntIconoEditar.classList.add("btnEditarProducto");
+        cntIconoEliminar.classList.add("btnEliminarProducto");
 
         //añadimos los datos
         id.innerText = idProducto;
@@ -115,10 +119,20 @@
         iconoEditar.data = "../iconos/editar.svg";
         iconoEliminar.data = "../iconos/eliminar.svg";
 
+        //añadimos los eventos a los botones
+        cntIconoEditar.addEventListener("click", () => {
+            alert("función no disponible, esta en desarrollo.")
+        });
+        cntIconoEliminar.addEventListener("click", () => {
+            alert("función no disponible, esta en desarrollo.")
+        });
+
         //añadimos los hijos
         //los objetos (iconos) a sus celdas
-        tdEditar.appendChild(iconoEditar);
-        tdEliminar.appendChild(iconoEliminar);
+        cntIconoEditar.appendChild(iconoEditar);
+        cntIconoEliminar.appendChild(iconoEliminar);
+        tdEditar.appendChild(cntIconoEditar);
+        tdEliminar.appendChild(cntIconoEliminar);
         //las celdas a la fila
         fila.appendChild(id);
         fila.appendChild(nombre);
